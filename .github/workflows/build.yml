@@ -15,7 +15,7 @@ jobs:
           cd V2rayNG
           chmod +x gradlew
           ./gradlew assembleDebug
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v7
         with:
           name: VPN-APK
           path: V2rayNG/app/build/outputs/apk/debug/*.apk
